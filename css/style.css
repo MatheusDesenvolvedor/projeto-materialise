@@ -1,0 +1,159 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sect1{
+  min-height: 400px; 
+  position: relative;
+}
+.form-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  transform: translate(-50%,-50%);
+  padding: 15px 2%;
+  max-width: 700px;
+  width: 100%;
+}
+input{
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.input-field {
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+  /* label color */
+  .input-field label {
+    color: #000;
+    border-left: none;
+    border-right: none;
+    outline: none;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+    border-left: none;
+    border-right: none;
+    outline: none;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+    border-left: none;
+    border-right: none;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+    border-left: none;
+    border-right: none;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+    border-left: none;
+    border-right: none;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+  .custom-title{
+    position: relative;
+  }
+  .custom-title h2{
+    font-size: 30px;
+    color: #443;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    padding-right: 10px;
+  }
+.custom-title > div{
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    top: 62%;
+    z-index: 1;
+    background-color: #443;
+  }
+  
+  .custom-title h6{
+    font-size: 20px;
+    color: #443;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    padding-right: 10px;
+  }
+  .progres{
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    margin: 20vh 25px;
+    left: 0;
+    top: 0;
+  }
+  .progres label{
+    color: #1a237e;
+    width: 3px;
+    height: 1vh;
+    background-color: #1a237e;
+  }
+  .progres p{
+    color: #1a237e;
+    font-size: 25px;
+    margin: 25px;
+  }
+  @media (max-width: 1040px) {
+    .progres{
+      margin: 15vh 6px;
+    }
+    .progres label{
+      color: #1a237e;
+      width: 3px;
+      height: 1vh;
+      background-color: #1a237e;
+    }
+    .progres p{
+      color: #1a237e;
+      font-size: 15px;
+      margin: 6px;
+    }
+  }
+  @media (max-width: 600px) {
+    .progres{
+      margin: 15vh 1px;
+    }
+    .progres label{
+      color: #1a237e;
+      width: 3px;
+      height: 1vh;
+      background-color: #1a237e;
+    }
+    .progres p{
+      color: #1a237e;
+      font-size: 10px;
+      margin: 1px;
+    }
+  }
